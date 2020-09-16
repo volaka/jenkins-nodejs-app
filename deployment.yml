@@ -35,8 +35,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  app: nodejs
-  deployer: jenkins
+  labels:
+    app: nodejs
+    deployer: jenkins
 spec:
   type: NodePort
   selector:
