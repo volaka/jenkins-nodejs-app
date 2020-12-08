@@ -15,8 +15,6 @@ spec:
         app: nodejs
         deployer: jenkins
     spec:
-      imagePullSecrets: 
-      - name: icr-pull
       containers:
       - name: nodejs
         image: de.icr.io/volaka/application
